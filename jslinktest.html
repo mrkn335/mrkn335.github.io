@@ -17,8 +17,9 @@
     function hrefTest() {
       // location.href='https://zucks.co.jp'
       // return true;
-      var atag = document.getElementById('atag');
-      atag.click();
+      var dummy = document.createElement('a');
+      dummy.setAttribute('href','https://zucks.co.jp');
+      dummy.click();
     }
 
     function linkTest(e) {

@@ -15,15 +15,17 @@
 
   <script type="text/javascript">
     function hrefTest() {
-      location.href='https://zucks.co.jp'
-      return true;
+      // location.href='https://zucks.co.jp'
+      // return true;
+      var atag = document.getElementById('atag');
+      atag.click();
     }
 
     function linkTest(e) {
       var atag = document.getElementById('atag');
       atag.innerHTML = 'aaa';
       // return false;
-      e.preventDefault();
+      // e.preventDefault();
     }
 
 

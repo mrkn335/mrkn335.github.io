@@ -15,12 +15,18 @@
       return true;
     }
 
+    function linkTest() {
+      var atag = document.getElementById('atag');
+      atag.innerHTML('aaa');
+      return true;
+    }
+
 
     var ptag = document.getElementById('linktag');
     ptag.addEventListener('click',hrefTest,false);
 
     var atag = document.getElementById('atag');
-    atag.addEventListener('click',hrefTest,false);
+    atag.addEventListener('click',linkTest,false);
 
   </script>
 </body>

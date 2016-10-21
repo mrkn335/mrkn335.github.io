@@ -19,10 +19,11 @@
       return true;
     }
 
-    function linkTest() {
+    function linkTest(e) {
       var atag = document.getElementById('atag');
       atag.innerHTML = 'aaa';
-      return false;
+      // return false;
+      e.preventDefault();
     }
 
 

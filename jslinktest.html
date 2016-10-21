@@ -1,0 +1,20 @@
+<!DOCTYPE html><html>
+<body>
+  <div>
+    <a href="https://zucks.co.jp">atag test</a>
+  </div>
+  <div style="background-color:yellow;">
+    <p id="linktag">js href test</p>
+  </div>
+  <script type="text/javascript">
+    function hrefTest() {
+      location.href='https://zucks.co.jp'
+    }
+
+
+    var ptag = document.getElementById('linktag');
+    ptag.addEventListener('click',hrefTest,false);
+
+  </script>
+</body>
+</html>

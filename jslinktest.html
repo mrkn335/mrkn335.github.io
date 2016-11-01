@@ -9,12 +9,22 @@
   <div style="background-color:yellow;">
     <a id="atag" href="https://zucks.co.jp">js href atag testsss</a>
   </div>
+  <div id='sizechk'></div>
 
 
 
 
   <script type="text/javascript">
 
+    var sizeChkDiv = document.getElementById('sizechk');
+    sizeChkDiv.innerHTML += 'parent screen size = ' + window.parent.screen.width + ' : ' + window.parent.screen.height + '\n';
+    sizeChkDiv.innerHTML += 'top screen size = ' + window.top.screen.width + ' : ' + window.top.screen.height + '\n';
+    sizeChkDiv.innerHTML += 'screen size = ' + screen.width + ' : ' + screen.height + '\n';
+    sizeChkDiv.innerHTML += 'screen avail size = ' + screen.availWidth + ' : ' + screen.availHeight + '\n';
+    sizeChkDiv.innerHTML += 'window inner size = ' + window.innerWidth + ' : ' + window.innerHeight + '\n';
+    sizeChkDiv.innerHTML += 'window outer size = ' + window.outerWidth + ' : ' + window.outerHeight + '\n';
+    sizeChkDiv.innerHTML += 'document size = ' + document.width + ' : ' + document.height + '\n';
+/*
     alert('parent screen size = ' + window.parent.screen.width + ' : ' + window.parent.screen.height);
     alert('top screen size = ' + window.top.screen.width + ' : ' + window.top.screen.height);
     alert('screen size = ' + screen.width + ' : ' + screen.height);
@@ -22,7 +32,7 @@
     alert('window inner size = ' + window.innerWidth + ' : ' + window.innerHeight);
     alert('window outer size = ' + window.outerWidth + ' : ' + window.outerHeight);
     alert('document size = ' + document.width + ' : ' + document.height);
-
+*/
 
     function hrefTest() {
       // location.href='https://zucks.co.jp'

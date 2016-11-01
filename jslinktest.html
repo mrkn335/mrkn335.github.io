@@ -11,13 +11,12 @@
     <a id="atag" href="https://zucks.co.jp">js href atag testsss</a>
   </div>
 -->
-  <div id='sizechk'>aaa</div>
+  <div id='sizechk'></div>
 
 
 
 
   <script type="text/javascript">
-alert(123);
     var sizeChkDiv = document.getElementById('sizechk');
     /*
     iframe内でこれらにアクセスするとjsエラーになるっぽい。理由は不明
@@ -29,16 +28,6 @@ alert(123);
     sizeChkDiv.innerHTML += 'window inner size = ' + window.innerWidth + ' : ' + window.innerHeight + '<br>';
     sizeChkDiv.innerHTML += 'window outer size = ' + window.outerWidth + ' : ' + window.outerHeight + '<br>';
     sizeChkDiv.innerHTML += 'document size = ' + document.width + ' : ' + document.height + '<br>';
-alert(456);
-/*
-    alert('parent screen size = ' + window.parent.screen.width + ' : ' + window.parent.screen.height);
-    alert('top screen size = ' + window.top.screen.width + ' : ' + window.top.screen.height);
-    alert('screen size = ' + screen.width + ' : ' + screen.height);
-    alert('screen avail size = ' + screen.availWidth + ' : ' + screen.availHeight);
-    alert('window inner size = ' + window.innerWidth + ' : ' + window.innerHeight);
-    alert('window outer size = ' + window.outerWidth + ' : ' + window.outerHeight);
-    alert('document size = ' + document.width + ' : ' + document.height);
-*/
 
 /*
     function hrefTest() {

@@ -20,10 +20,10 @@
 alert(123);
     var sizeChkDiv = document.getElementById('sizechk');
     /*
+    iframe内でこれらにアクセスするとjsエラーになるっぽい。理由は不明
     sizeChkDiv.innerHTML += 'parent screen size = ' + window.parent.screen.width + ' : ' + window.parent.screen.height + '<br>';
-    */
     sizeChkDiv.innerHTML += 'top screen size = ' + window.top.screen.width + ' : ' + window.top.screen.height + '<br>';
-
+    */
     sizeChkDiv.innerHTML += 'screen size = ' + screen.width + ' : ' + screen.height + '<br>';
     sizeChkDiv.innerHTML += 'screen avail size = ' + screen.availWidth + ' : ' + screen.availHeight + '<br>';
     sizeChkDiv.innerHTML += 'window inner size = ' + window.innerWidth + ' : ' + window.innerHeight + '<br>';

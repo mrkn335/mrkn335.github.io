@@ -19,11 +19,11 @@
   <script type="text/javascript">
 alert(123);
     var sizeChkDiv = document.getElementById('sizechk');
-
-    sizeChkDiv.innerHTML += 'parent screen size = ' + window.parent.screen.width + ' : ' + window.parent.screen.height + '\n';
     /*
-    sizeChkDiv.innerHTML += 'top screen size = ' + window.top.screen.width + ' : ' + window.top.screen.height + '\n';
+    sizeChkDiv.innerHTML += 'parent screen size = ' + window.parent.screen.width + ' : ' + window.parent.screen.height + '<br>';
     */
+    sizeChkDiv.innerHTML += 'top screen size = ' + window.top.screen.width + ' : ' + window.top.screen.height + '<br>';
+
     sizeChkDiv.innerHTML += 'screen size = ' + screen.width + ' : ' + screen.height + '<br>';
     sizeChkDiv.innerHTML += 'screen avail size = ' + screen.availWidth + ' : ' + screen.availHeight + '<br>';
     sizeChkDiv.innerHTML += 'window inner size = ' + window.innerWidth + ' : ' + window.innerHeight + '<br>';
